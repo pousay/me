@@ -3,7 +3,6 @@ import { About } from "./About";
 import { Skills } from "./Skills";
 import { Works } from "./Works";
 import { Contact } from "./Contact";
-import { Utils } from "./Utils";
 import type { RoomId } from "../types";
 
 interface PageEntry {
