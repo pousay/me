@@ -18,5 +18,4 @@ export const PAGES: Record<RoomId, PageEntry> = {
   skills: { title: "My Skills", Component: Skills },
   works: { title: "My Works", Component: Works },
   contact: { title: "Contact", Component: Contact },
-  utils: { title: "For Friends", Component: Utils },
 };
