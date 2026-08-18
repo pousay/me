@@ -23,21 +23,18 @@ export function PortraitPlan({ onOpen }: PlanProps) {
         stroke={BLUEPRINT_THEME.wall}
         strokeWidth="7"
       />
-      <Wall x1="30" y1="260" x2="380" y2="260" />
-      <Wall x1="430" y1="260" x2="530" y2="260" />
-      <Wall x1="30" y1="520" x2="530" y2="520" />
-      <Wall x1="30" y1="700" x2="530" y2="700" />
+      <Wall x1="30" y1="320" x2="380" y2="320" />
+      <Wall x1="430" y1="320" x2="530" y2="320" />
+      <Wall x1="30" y1="550" x2="530" y2="550" />
       <Wall x1="380" y1="30" x2="380" y2="230" />
-      <Door x={200} y={260} rotate={0} w={26} />
-      <Door x={405} y={260} rotate={0} w={22} />
-      <Door x={200} y={520} rotate={0} w={26} />
-      <Door x={200} y={700} rotate={0} w={26} />
+      <Door x={427} y={320} rotate={180} w={50} />
+      <Door x={377} y={235} rotate={90} w={80} />
       <RoomLabel x={205} y={150} label="About me" />
       <RoomLabel x={455} y={140} label="Skills" />
       <RoomLabel x={280} y={390} label="Works" />
       <RoomLabel x={280} y={605} label="Contact" />
       <Pin cx={205} cy={190} id="about" name="About me" onOpen={onOpen} />
-      <Pin cx={455} cy={180} id="skills" name="Skills" onOpen={onOpen} />
+      <Pin cx={455} cy={80} id="skills" name="Skills" onOpen={onOpen} />
       <Pin cx={280} cy={440} id="works" name="Works" onOpen={onOpen} />
       <Pin cx={280} cy={650} id="contact" name="Contact" onOpen={onOpen} />
     </svg>
