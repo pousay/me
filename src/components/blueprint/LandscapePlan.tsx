@@ -31,14 +31,14 @@ export function LandscapePlan({ onOpen }: PlanProps) {
       <Door x={267} y={233} rotate={90} w={45} />
       <Door x={598} y={223} rotate={90} w={45} />
       <Door x={648} y={290} rotate={180} w={50} />
-      <RoomLabel x={150} y={260} label="Skills" sub="work area" />
+      <RoomLabel x={150} y={260} label="Works" sub="work area" />
       <RoomLabel x={435} y={240} label="About" sub="bedroom" />
       <RoomLabel x={735} y={410} label="Contact" sub="dining" />
-      <RoomLabel x={735} y={160} label="Works" sub="wash room" />
-      <Pin cx={150} cy={310} id="skills" name="Skills" onOpen={onOpen} />
+      <RoomLabel x={735} y={160} label="Skills" sub="wash room" />
+      <Pin cx={150} cy={310} id="works" name="Works" onOpen={onOpen} />
       <Pin cx={435} cy={290} id="about" name="About Me" onOpen={onOpen} />
       <Pin cx={735} cy={460} id="contact" name="Contact" onOpen={onOpen} />
-      <Pin cx={735} cy={210} id="works" name="Works" onOpen={onOpen} />
+      <Pin cx={735} cy={210} id="skills" name="Skills" onOpen={onOpen} />
     </svg>
   );
 }
