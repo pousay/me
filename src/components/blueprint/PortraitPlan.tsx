@@ -25,9 +25,11 @@ export function PortraitPlan({ onOpen }: PlanProps) {
       />
       <Wall x1="30" y1="320" x2="380" y2="320" />
       <Wall x1="430" y1="320" x2="530" y2="320" />
-      <Wall x1="30" y1="550" x2="530" y2="550" />
+      <Wall x1="230" y1="550" x2="530" y2="550" />
+      <Wall x1="30" y1="550" x2="180" y2="550" />
       <Wall x1="380" y1="30" x2="380" y2="230" />
       <Door x={427} y={320} rotate={180} w={50} />
+      <Door x={180} y={550} rotate={0} w={50} />
       <Door x={377} y={235} rotate={90} w={80} />
       <RoomLabel x={205} y={150} label="About me" />
       <RoomLabel x={455} y={140} label="Skills" />
