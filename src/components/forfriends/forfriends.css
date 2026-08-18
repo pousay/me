@@ -1,0 +1,34 @@
+/* Bulb turning ON — a satisfied little "pop" with a glow bloom. */
+@keyframes bulbApprove {
+  0%   { transform: scale(1);    filter: brightness(1); }
+  35%  { transform: scale(1.35); filter: brightness(1.6); }
+  60%  { transform: scale(0.92); filter: brightness(1.2); }
+  100% { transform: scale(1);    filter: brightness(1.05); }
+}
+
+/* Bulb turning OFF — a small disappointed shake as it dims. */
+@keyframes bulbDisapprove {
+  0%   { transform: scale(1) rotate(0deg);     filter: brightness(1); }
+  25%  { transform: scale(0.9) rotate(-6deg);  filter: brightness(0.6); }
+  50%  { transform: scale(0.9) rotate(6deg);   filter: brightness(0.5); }
+  75%  { transform: scale(0.95) rotate(-3deg); filter: brightness(0.6); }
+  100% { transform: scale(1) rotate(0deg);     filter: brightness(1); }
+}
+
+.bulb-approve {
+  animation: bulbApprove 480ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.bulb-disapprove {
+  animation: bulbDisapprove 420ms ease-in-out both;
+}
+
+/* Guestbook fading/energizing in once the last bulb lights up. */
+@keyframes guestbookReveal {
+  0%   { opacity: 0; transform: translateY(10px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0)     scale(1); }
+}
+
+.guestbook-reveal {
+  animation: guestbookReveal 420ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
