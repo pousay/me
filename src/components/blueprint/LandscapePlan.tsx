@@ -34,12 +34,10 @@ export function LandscapePlan({ onOpen }: PlanProps) {
       <Door x={450} y={290} rotate={0} w={26} />
       <Door x={760} y={290} rotate={0} w={26} />
       <RoomLabel x={180} y={260} label="Skills" sub="work area" />
-      <RoomLabel x={735} y={410} label="For Friends" sub="open kitchen" />
       <RoomLabel x={465} y={140} label="About" sub="bedroom" />
       <RoomLabel x={465} y={410} label="Contact" sub="dining" />
       <RoomLabel x={735} y={160} label="Works" sub="wash room" />
       <Pin cx={180} cy={310} id="skills" name="Skills" onOpen={onOpen} />
-      <Pin cx={735} cy={460} id="utils" name="For Friends" onOpen={onOpen} />
       <Pin cx={465} cy={190} id="about" name="About Me" onOpen={onOpen} />
       <Pin cx={465} cy={460} id="contact" name="Contact" onOpen={onOpen} />
       <Pin cx={735} cy={210} id="works" name="Works" onOpen={onOpen} />
