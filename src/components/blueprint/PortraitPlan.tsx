@@ -36,12 +36,10 @@ export function PortraitPlan({ onOpen }: PlanProps) {
       <RoomLabel x={455} y={140} label="Skills" />
       <RoomLabel x={280} y={390} label="Works" />
       <RoomLabel x={280} y={605} label="Contact" />
-      <RoomLabel x={280} y={760} label="For Friends" />
       <Pin cx={205} cy={190} id="about" name="About me" onOpen={onOpen} />
       <Pin cx={455} cy={180} id="skills" name="Skills" onOpen={onOpen} />
       <Pin cx={280} cy={440} id="works" name="Works" onOpen={onOpen} />
       <Pin cx={280} cy={650} id="contact" name="Contact" onOpen={onOpen} />
-      <Pin cx={280} cy={820} id="utils" name="For Friends" onOpen={onOpen} />
     </svg>
   );
 }
