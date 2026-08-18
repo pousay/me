@@ -23,23 +23,21 @@ export function LandscapePlan({ onOpen }: PlanProps) {
         stroke={BLUEPRINT_THEME.wall}
         strokeWidth="7"
       />
-      <Wall x1="330" y1="30" x2="330" y2="230" />
-      <Wall x1="330" y1="280" x2="330" y2="530" />
+      <Wall x1="270" y1="30" x2="270" y2="230" />
+      <Wall x1="270" y1="280" x2="270" y2="530" />
       <Wall x1="600" y1="30" x2="600" y2="220" />
       <Wall x1="600" y1="270" x2="600" y2="530" />
-      <Wall x1="330" y1="290" x2="600" y2="290" />
       <Wall x1="650" y1="290" x2="870" y2="290" />
-      <Door x={330} y={250} rotate={90} w={28} />
-      <Door x={600} y={240} rotate={90} w={28} />
-      <Door x={450} y={290} rotate={0} w={26} />
-      <Door x={760} y={290} rotate={0} w={26} />
-      <RoomLabel x={180} y={260} label="Skills" sub="work area" />
-      <RoomLabel x={465} y={140} label="About" sub="bedroom" />
-      <RoomLabel x={465} y={410} label="Contact" sub="dining" />
+      <Door x={267} y={233} rotate={90} w={45} />
+      <Door x={598} y={223} rotate={90} w={45} />
+      <Door x={648} y={290} rotate={180} w={50} />
+      <RoomLabel x={150} y={260} label="Skills" sub="work area" />
+      <RoomLabel x={435} y={240} label="About" sub="bedroom" />
+      <RoomLabel x={735} y={410} label="Contact" sub="dining" />
       <RoomLabel x={735} y={160} label="Works" sub="wash room" />
-      <Pin cx={180} cy={310} id="skills" name="Skills" onOpen={onOpen} />
-      <Pin cx={465} cy={190} id="about" name="About Me" onOpen={onOpen} />
-      <Pin cx={465} cy={460} id="contact" name="Contact" onOpen={onOpen} />
+      <Pin cx={150} cy={310} id="skills" name="Skills" onOpen={onOpen} />
+      <Pin cx={435} cy={290} id="about" name="About Me" onOpen={onOpen} />
+      <Pin cx={735} cy={460} id="contact" name="Contact" onOpen={onOpen} />
       <Pin cx={735} cy={210} id="works" name="Works" onOpen={onOpen} />
     </svg>
   );
